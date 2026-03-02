@@ -21,8 +21,8 @@ const AboutSection = () => {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { label: "Languages", value: "C, C++, JS, Python" },
-                { label: "Tools", value: "GitHub, Figma, VS Code" },
+                { label: "Languages", value: "C, Html, Css, JS, " },
+                { label: "Tools", value: "GitHub, Figma, VS Code, WordPress" },
                 { label: "Focus", value: "Robotics & AI" },
                 { label: "Location", value: "Liverpool, UK" },
               ].map((item) => (
