@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Globe } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -52,7 +52,7 @@ const ContactSection = () => {
             rel="noopener noreferrer"
             className="w-10 h-10 rounded-full border border-primary-foreground/20 flex items-center justify-center text-primary-foreground/70 hover:text-secondary hover:border-secondary transition-colors"
           >
-            <Portfolio size={18} />
+            <Globe size={18} />
           </a>
         </div>
       </div>
