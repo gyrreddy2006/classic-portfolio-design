@@ -2,27 +2,30 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "AgriEasy",
-    subtitle: "Smart Farming App",
-    year: "2025",
-    description:
-      "Comprehensive mobile platform connecting farmers with markets, providing access to crop information, weather data, and seed purchases.",
-    highlights: [
-      "Integrated real-time weather APIs and plant data for informed farming decisions",
-      "Designed an intuitive interface for rural farmers with limited digital literacy",
-      "Enhanced efficiency by digitizing traditional farming operations",
+   title: "SHTS",
+subtitle: "Pure Health in Every Shot",
+year: "2025",
+description:
+  "Comprehensive wellness platform for SHTS — a brand offering 100% natural 60ml cold-pressed health shots made from fresh ingredients with zero preservatives, designed to support immunity, digestion, detox, and daily energy.",
+highlights: [
+  "Developed a clean and intuitive interface showcasing products, benefits, pricing transparency, and ordering system",
+  "Highlighted natural ingredients, small-batch production, and eco-friendly packaging for brand trust",
+  "Optimized user journey for quick product discovery and direct WhatsApp ordering",
+  "Structured informative sections including FAQ, process flow, and health benefits for better user engagement"
     ],
   },
   {
-    title: "SafeHer",
-    subtitle: "Women's Safety App",
-    year: "2025",
-    description:
-      "Application to enhance women's personal safety using real-time alerts and location tracking.",
-    highlights: [
-      "Implemented Google Maps API and secure communication channels for emergency alerts",
-      "Developed reliable alert mechanism prioritizing privacy and minimal data usage",
-      "Improved awareness through responsive and user-friendly UI design",
+   title: "EX",
+subtitle: "Expense Tracker",
+year: "2026",
+description:
+  "Personal finance tracking application designed to help users monitor spending, manage budgets, and categorize expenses efficiently through a simple dashboard interface.",
+highlights: [
+  "Built an interactive dashboard displaying total spent, remaining balance, and category-wise tracking",
+  "Implemented expense categorization system including food, transport, books, entertainment, utilities, and more",
+  "Added sorting and filtering features for quick financial insights",
+  "Integrated export functionality for generating expense reports in PDF format",
+  "Designed clean, user-friendly interface for fast expense entry and management"
     ],
   },
   {
