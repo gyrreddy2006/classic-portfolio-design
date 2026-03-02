@@ -62,7 +62,18 @@ const ProjectsSection = () => {
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="font-body text-xs font-medium text-secondary">{project.year}</span>
-                <ExternalLink size={14} className="text-muted-foreground group-hover:text-secondary transition-colors" />
+                <div className="flex items-center gap-2">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Github size={14} />
+                    </a>
+                  )}
+                  {project.link && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
+                </div>
               </div>
               <h3 className="font-display text-xl font-bold text-foreground mb-1">{project.title}</h3>
               <p className="font-body text-sm text-secondary mb-3">{project.subtitle}</p>
