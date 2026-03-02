@@ -1,16 +1,9 @@
 import { Mail, MapPin } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-background/80" />
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto w-full section-padding pt-32">
+    <section className="relative min-h-screen flex items-center">
+      <div className="max-w-6xl mx-auto w-full section-padding pt-32">
         <div className="max-w-2xl">
           <p className="font-body text-sm font-semibold tracking-[0.2em] uppercase text-secondary mb-4 animate-fade-in-up">
             Mechatronics & Robotics
