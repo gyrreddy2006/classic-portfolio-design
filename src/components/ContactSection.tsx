@@ -45,6 +45,16 @@ const ContactSection = () => {
             className="w-10 h-10 rounded-full border border-primary-foreground/20 flex items-center justify-center text-primary-foreground/70 hover:text-secondary hover:border-secondary transition-colors"
           >
             <Github size={18} />
+
+          <div className="flex justify-center gap-4">
+          <a
+            href="https://gyrr.netlify.app/#contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 rounded-full border border-primary-foreground/20 flex items-center justify-center text-primary-foreground/70 hover:text-secondary hover:border-secondary transition-colors"
+          >
+            <Portfolio size={18} />
+          </a>
           </a>
         </div>
       </div>
