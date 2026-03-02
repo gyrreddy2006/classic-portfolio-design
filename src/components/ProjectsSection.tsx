@@ -1,31 +1,35 @@
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-   title: "SHTS",
-subtitle: "Pure Health in Every Shot",
-year: "2025",
-description:
-  "Comprehensive wellness platform for SHTS — a brand offering 100% natural 60ml cold-pressed health shots made from fresh ingredients with zero preservatives, designed to support immunity, digestion, detox, and daily energy.",
-highlights: [
-  "Developed a clean and intuitive interface showcasing products, benefits, pricing transparency, and ordering system",
-  "Highlighted natural ingredients, small-batch production, and eco-friendly packaging for brand trust",
-  "Optimized user journey for quick product discovery and direct WhatsApp ordering",
-  "Structured informative sections including FAQ, process flow, and health benefits for better user engagement"
+    title: "SHTS",
+    subtitle: "Pure Health in Every Shot",
+    year: "2025",
+    link: "https://shtsdaily.com",
+    github: "https://github.com/gyrreddy2006/SHTS",
+    description:
+      "Comprehensive wellness platform for SHTS — a brand offering 100% natural 60ml cold-pressed health shots made from fresh ingredients with zero preservatives, designed to support immunity, digestion, detox, and daily energy.",
+    highlights: [
+      "Developed a clean and intuitive interface showcasing products, benefits, pricing transparency, and ordering system",
+      "Highlighted natural ingredients, small-batch production, and eco-friendly packaging for brand trust",
+      "Optimized user journey for quick product discovery and direct WhatsApp ordering",
+      "Structured informative sections including FAQ, process flow, and health benefits for better user engagement"
     ],
   },
   {
-   title: "EX",
-subtitle: "Expense Tracker",
-year: "2026",
-description:
-  "Personal finance tracking application designed to help users monitor spending, manage budgets, and categorize expenses efficiently through a simple dashboard interface.",
-highlights: [
-  "Built an interactive dashboard displaying total spent, remaining balance, and category-wise tracking",
-  "Implemented expense categorization system including food, transport, books, entertainment, utilities, and more",
-  "Added sorting and filtering features for quick financial insights",
-  "Integrated export functionality for generating expense reports in PDF format",
-  "Designed clean, user-friendly interface for fast expense entry and management"
+    title: "EX",
+    subtitle: "Expense Tracker",
+    year: "2026",
+    link: "https://expnso.netlify.app",
+    github: "https://github.com/gyrreddy2006/Expnso-Mobile",
+    description:
+      "Personal finance tracking application designed to help users monitor spending, manage budgets, and categorize expenses efficiently through a simple dashboard interface.",
+    highlights: [
+      "Built an interactive dashboard displaying total spent, remaining balance, and category-wise tracking",
+      "Implemented expense categorization system including food, transport, books, entertainment, utilities, and more",
+      "Added sorting and filtering features for quick financial insights",
+      "Integrated export functionality for generating expense reports in PDF format",
+      "Designed clean, user-friendly interface for fast expense entry and management"
     ],
   },
   {
@@ -62,7 +66,18 @@ const ProjectsSection = () => {
             >
               <div className="flex items-center justify-between mb-4">
                 <span className="font-body text-xs font-medium text-secondary">{project.year}</span>
-                <ExternalLink size={14} className="text-muted-foreground group-hover:text-secondary transition-colors" />
+                <div className="flex items-center gap-2">
+                  {"github" in project && project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <Github size={14} />
+                    </a>
+                  )}
+                  {"link" in project && project.link && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors">
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
+                </div>
               </div>
               <h3 className="font-display text-xl font-bold text-foreground mb-1">{project.title}</h3>
               <p className="font-body text-sm text-secondary mb-3">{project.subtitle}</p>
